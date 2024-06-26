@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 2%;
+
+}
+
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    background: transparent;
+    backdrop-filter: blur;
+}
+
+.links {
+    display: flex;
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    gap: 20px;
+}
+
+.git {
+    font-size: 40px;
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+.instagram {
+    font-size: 40px;
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+.home_icon {
+    font-size: 40px;
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+.git:hover{
+    color: aliceblue;
+    transform: scale(1.5);
+}
+
+.instagram:hover{
+    color: aliceblue;
+    transform: scale(1.5);
+}
+
+.home_icon:hover{
+    color: aliceblue;
+    transform: scale(1.5);
+}
+
+
+.texto_destaque {
+    margin-left: 1em;
+    color:white;
+}
+
+.linha_horizontal{
+    width: calc(100% - 30px);
+    height: 1px; 
+    border: 1px solid #c0c0c0;
+    margin-left: 10px;
+}
+
+.imagem{
+    display: flex;
+    width: 600px;
+    height: 600px;
+    padding: 50px;
+}
+
+.titulo {
+    color: aqua;
+}
+
+.texto {
+    color: aliceblue;
+}
+
+.descricao {
+    padding: 20px;
+}

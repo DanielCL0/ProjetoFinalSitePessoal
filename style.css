@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width:95%;
+    margin: 0 auto;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 2%;
+
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    background: transparent;
+    backdrop-filter: blur;
+}
+
+.links {
+    display: flex;
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    gap: 20px;
+}
+
+.git {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+.instagram {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+.home_icon {
+    font-size: 40px;
+    color: bla;
+    text-decoration: none;
+}
+
+.git:hover{
+    color: black;
+    transform: scale(1.5);
+}
+
+.instagram:hover{
+    color: black;
+    transform: scale(1.5);
+}
+
+.home_icon:hover{
+    color: black;
+    transform: scale(1.5);
+}
+
+.botao input[type="button"]:hover {
+    background-color: #666666;
+}
+
+
+.tome{
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.tomer{
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.infodoperfil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.profile-info img {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+}
+
+.profile-info h2 {
+    color: #333;
+}
+
+.profile-info p {
+    color: #666;
+    text-align: right;
+    margin: 0;
+}
+
+.bordinha{
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+.cabeçalho{
+    display: flex;
+}
+
+.cabeçalho li{
+    list-style: none;
+    margin-left: 80px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    text-align: start;
+}
+
+.card1 {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.sudoku {
+    display: flex;
+    width: 18rem;
+    padding: 10px;
+}
+
+.texto_card {
+    color: rgb(85, 174, 252);
+}
+
+.botao {
+    text-decoration: none;
+
+    padding: 10px;
+    text-align: center;
+}
+
+.botao:hover {
+    color: aliceblue;
+    transform: scale(1.5);
+}
+
+.jogo_cobrinha {
+    display: flex;
+    padding: 20px;
+    width: 18rem;
+}
+
+.calculadora {
+    display: flex;
+    padding: 20px;
+    width: 18rem;
+}
+
+.labirinto {
+    display: flex;
+    padding: 20px;
+    width: 18rem;
+}
+
+#linha{
+    justify-content: center !important;
+}
+
+.amigos{
+    width: 250px;
+}
+
+.imagem-perfil{
+    width: 396px;
+}
+
+.sas{
+    color: deepskyblue;
+}
+
+.imagem-perfil {
+    width: 100%;
+    
+}
+
+.amigos {
+    width: 100%;
+    height: auto;
+}
+
+.bordinha {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.card1 .card {
+    margin-bottom: 20px;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Menu Mobile*/
+
+#menuToggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    
+    header{
+        top: 0px;
+        width: 100%;
+    }
+
+    header nav{
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cabeçalho{
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 0%;
+        background: rgba(0,0,0,0.7);
+        overflow: hidden;
+
+        -webkit-transition: heigth 0.3s;
+        -moz-transition: heigth 0.3s;
+        -o-transition: heigth 0.3s;
+        transition: height 0.3s;
+    }
+
+    .cabeçalho li{
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+  
+    .cabeçalho li a{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+  
+    .menu-icon{
+        display: block;
+        margin-right: 10px;
+        color: blue;
+        width: 50px;
+        height: inherit;
+        position: fixed;
+        top: 15px;
+        right: 30px;
+        line-height: 60px;
+        z-index: 999;
+    }
+
+    .menu-icon i{
+        font-size: 1.7em;
+        z-index: 998;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2){
+        display: block;
+    }
+
+    #menuToggle:checked ~ label i:first-child{
+        display: none;
+    }
+
+    #menuToggle:not(checked) ~ label i:nth-child(2){
+        display: none;
+    }
+
+    #menuToggle:not(checked) ~ label i:first-child{
+        display: block;
+        z-index: 998;
+    }
+
+    #menuToggle:checked ~ ul{
+        height: 100%;
+        z-index: 998;
+    }
+
+}
+
+@media screen and (min-width:425px) {
+    .tudo-fi{
+        max-width: 425px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .tudo-fi{
+        max-width: 600px;
+        
+    }
+    .row{
+        justify-content: center !important;
+      }
+}
+
+
+@media screen and (min-width:768px) {
+    .tudo-fi{
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .tudo-fi{
+        max-width: 900px;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .tudo-fi{
+        max-width: 1024px;
+    }
+}
+
+@media screen and (min-width:px) {
+    .tudo-fi{
+        max-width: px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .tudo-fi{
+        max-width: 1440px;
+    }
+}
+
+
+@media screen and (min-width:2560px) {
+    .tudo-fi{
+        max-width: 2px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .card1 {
+         display: flex;
+         gap: 50px;
+        justify-content: center;
+         flex-direction: column;
+        }
+
+    .colegas{
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        text-align: center;
+        flex-direction: column;
+    }
+}
